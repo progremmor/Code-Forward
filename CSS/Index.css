@@ -1,0 +1,28 @@
+#textMissionGrid{
+    display:grid;
+    padding:2%;
+    grid-template-columns: 2fr 50%;
+    grid-template-rows:auto auto;
+    width:100%;
+
+}
+#missionImage{
+    position:relative;
+    max-width:100%;
+    max-height:100%;
+    align-self:center;
+    width:80%;
+    min-width:0%;
+    min-height:100%;
+    height:100%;
+}
+#missionText{
+    position:relative;
+    max-width:100%;
+    max-height:100%;
+    align-self:center;
+    width:100%;
+    min-width:0%;
+    min-height:100%;
+    height:100%;
+}

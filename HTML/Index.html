@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/sideBar.css">
+    <link rel="stylesheet" href="../CSS/Index.css">
     <title>Home</title>
 </head>
 
@@ -11,47 +12,56 @@
     <div class="formatGrid" z-index="-2">
         <h1 id="About">
             <div class="Headertext">
-                <div id="main" class="grid" style="width:100vw;height:100%;z-index: -1;">
-                    <title id="title" style="justify-self:center; z-index:2">Code Forward</title>
-                    <div style="justify-self:center;width:100vw;position:absolute;top:0px;align-content:center;display:block">
-                        <img src="../Images/Logo-smal.png"
-                            style="justify-self:center; align-self:center; z-index: 1; position:absolute; aspect-ratio: 1/1;width:10%;">
-                        </img>
-                    </div>
+                <div id="Logo" style="object-fit:cover;text-align:center;justify-content:center;align-content:center;">
+                    <img src="../Images/Icons/Logo-white-word.png"
+                        style="object-fit:contain;justify-self:center; align-self:center; z-index: 1; position:relative;width:50%;height:50%">
+                    </img>
                 </div>
             </div>
-            <div id="bgGradient" style="width:100%;height:100%;position:absolute;top:0px;align-content:center;display:block;z-index:0"></div>
         </h1>
         <div id="sideCol">
             <div id="LeButtons">
-                <ul>
-                    <li><a z-index="4" href="About Us.html"><strong>Who We Are</strong></a></li>
-                    <li><a z-index="4" href="GetInvolved.html"><strong>Get Involved</strong></a></li>
-                    <li><a z-index="4" href="Contact.html"><strong>Contact Us</strong></a></li>
-                    <li><a z-index="4" href="Programs.html"><strong>What We Do</strong></a></li>
+                <ul style="margin-top:10%">
+                    <li><a z-index="4" href="About Us.html">Who We are</a></li>
+                    <li><a z-index="4" href="Programs.html">What We Do</a></li>
+                    <li><a z-index="4" href="GetInvolved.html">Get Involved</a></li>
+                    <li><a z-index="4" href="Contact.html">Contact Us</a></li>
                 </ul>
             </div>
         </div>
         <div id="body">
-            <div style="justify-self: center;">
-                <img src="../Images/image.png" style="justify-self: center; aspect-ratio:1.5/1; width:100%;top:0"></img>
+            <div id="textMissionGrid" style="width:100%;height:100%;">
+                <div id="missionImage">
+                    <div
+                        style="display:block;width:100%;background-color:#024884;z-index:1;;align-self:center;position:absolute;aspect-ratio:1/1;margin:10%">
+                    </div>
+                    <img src="../Images/Main-page.jpg"
+                        style="justify-self: center; aspect-ratio:1/1; width:100%;top:0;z-index:4;margin:20%;position:absolute"></img>
+                </div>
+                <div id="missionText">
+                    <div
+                        style="position:aboslute;margin-top:10%;margin-left:5%; margin-right:5%; align-self:center;border-radius:8px; padding: 30px; box-shadow:2px 3px 5px #ababab;background-color:rgb(255, 255, 255); border:1px solid rgb(210, 210, 210);">
+                        <p style="justify-self: center; font-family:Arial; font-size:160%; color:black">
+                            <strong>OurMission</strong>
+                        </p>
+                        <p style="line-height:1.5;font-family:Arial; font-size: 100%; color:black">
+                            CodeForward is an educational non-profit organization that aims to teach technology and
+                            empower students from all backgrounds including under-served communities by
+                            providing accessible, high-quality computer science, game design, and coding tutoring.
+                            We are located in Lexington, MA. and we believe that every student deserves the
+                            opportunity to explore, learn, and thrive in the digital world. Through mentorship, hands-on
+                            learning, and community partnerships, we aim to close the opportunity gap in tech
+                            education and inspire the next generation of diverse innovators.
+                        </p>
+                    </div>
+                </div>
             </div>
-
-            <p style="justify-self: center; font-family:Arial; font-size:200%; color:black"><strong>Our Mission</strong>
-            </p>
-            <p style="border-radius:8px; background-color:rgb(242, 242, 242); border:1px solid rgb(194, 194, 194);line-height:1.5;font-family:Arial; padding: 50px; box-shadow:2px 3px 5px; font-size: 125%; color:black">
-                CodeForward is an educational non-profit organization that aims to teach technology and
-                empower students from all backgrounds including under-served communities by
-                providing accessible, high-quality computer science, game design, and coding tutoring.
-                We are located in Lexington, MA. and we believe that every student deserves the
-                opportunity to explore, learn, and thrive in the digital world. Through mentorship, hands-on learning, and community partnerships, we aim to close the opportunity gap in tech
-                education and inspire the next generation of diverse innovators.</p>
             <p><br></p>
             <div id="footer"
-                style="font-family: Arial;color:rgb(49, 49, 49);background-color: rgb(255, 255, 255);width:100vw; justify-content:center">
+                style="grid-area:Footer; margin-top:5%;font-family: Arial;color:rgb(49, 49, 49);background-color: rgb(255, 255, 255);width:100vw; justify-content:center">
                 <p style="text-align: center;">© 2025 CodeForward. All Rights Reserved.</p>
-                <p style="text-align: center;">For general questions, please contact us at <span
-                        style="color:blue">contact.codeforward@gmail.com.</span></p>
+                <p style="text-align: center;">For general questions, please contact us at <span style="color:blue"><a
+                            href=mailto:"contact.codeforward@gmail.com">contact.codeforward@gmail.com</a>.</span></p>
             </div>
         </div>
     </div>

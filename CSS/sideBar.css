@@ -24,10 +24,10 @@ div#LeButtons li a{
     z-index:5;
     font-family:Arial;
     width:80%;
-	color:#000000;
-	background: lightgray;
+	color:#ffffff;
+	/* background: lightgray;
 	border:1px solid #ffffff;
-	border-radius: 8px;  
+	border-radius: 8px;   */
 	text-decoration: none;
 	display: block ;
 }
