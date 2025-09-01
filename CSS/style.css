@@ -192,22 +192,22 @@ image{
 }
 @keyframes buttonHover{
     0%{
-        transform:translateY(0);
-        filter: drop-shadow(0 0 1px rgba(12, 13, 20, 0.4));
+        transform:translateY(0px);
+        filter: drop-shadow(0px 0px 1px rgba(12, 13, 20, 0.4));
     }
     100%{
         transform:translateY(-2px);
-        filter: drop-shadow(0 8px 8px rgba(16, 17, 25, 0.4));
+        filter: drop-shadow(0px 8px 8px rgba(16, 17, 25, 0.4));
     }
 }
 @keyframes notButtonHover{
     0%{
         transform:translateY(-2px);
-        filter: drop-shadow(0 8px 8px rgba(16, 17, 25, 0.4));
+        filter: drop-shadow(0px 8px 8px rgba(16, 17, 25, 0.4));
     }
     100%{
         transform:translateY(0px);
-        filter: drop-shadow(0 0 1px rgba(12, 13, 20, 0.4));
+        filter: drop-shadow(0px 0px 1px rgba(12, 13, 20, 0.4));
 
     }
 }
