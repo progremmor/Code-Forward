@@ -1,0 +1,18 @@
+#programGrid{
+    display:flex;
+    flex-flow:row wrap;
+    width:100%;
+    margin-top:5%;
+    height:auto;
+    height:inherit;
+    box-sizing:border-box;
+    justify-content: space-around;
+    align-items:center;
+}
+.containerImg{
+    position:relative;
+    flex: 0 0 calc(33.33%-20px);
+    margin-top:1%;
+    height:400px;
+    width:auto;
+}
