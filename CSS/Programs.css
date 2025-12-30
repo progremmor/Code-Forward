@@ -1,11 +1,10 @@
-#programGrid{
+.programGrid{
     display:flex;
-    flex-flow:row wrap;
+    flex-flow:column wrap;
     width:100%;
     margin-top:5%;
     height:auto;
-    height:inherit;
-    box-sizing:border-box;
+    box-sizing:border-box;   
     justify-content: space-around;
     align-items:center;
 }
@@ -15,4 +14,16 @@
     margin-top:1%;
     height:400px;
     width:auto;
+}
+#vertGrid{
+    display:flex;
+    flex-flow:column;
+    width:100%;
+    
+}
+.box{
+    display:block;
+    background-color:gray;
+    width:50%;
+    height:50%;
 }
