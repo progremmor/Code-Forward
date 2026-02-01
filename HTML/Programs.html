@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+<script>
+  document.documentElement.classList.add("no-animations");
 
+  window.addEventListener("load", () => {
+    document.documentElement.classList.remove("no-animations");
+  });
+</script>
 <head>
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/sideBar.css">
     <link rel="stylesheet" href="../CSS/Programs.css">
     <title>Get Involved</title>
 </head>
+
 
 <body>
     <div class="formatGrid" z-index="-2">
@@ -38,7 +45,7 @@
                         <a href="ProgramReports/HTMLWorkshop.html"><img hoverable= "hoverable" style="width:auto; height: 50vh" src="../Images/Fall Workshop.png"></a>
                     </div>
                     <div>
-                        <a><img hoverable= "hoverable" style="width:auto; height: 50vh" src="../Images/Python Workshop Flyer.png"></a>
+                        <a href="ProgramReports/PythonWorkshop.html"><img hoverable= "hoverable" style="width:auto; height: 50vh" src="../Images/Python Workshop Flyer (fixed).png"></a>
                     </div>
                     <div>
                         <a><img hoverable= "hoverable" style="width:auto; height: 50vh" src="../Images/stay tuned flyer.png"></a>
@@ -53,7 +60,11 @@
             </div>
         </div>
     </div>
-
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    document.documentElement.classList.remove("no-animations");
+  });
+</script>
 </body>
 
 </html>

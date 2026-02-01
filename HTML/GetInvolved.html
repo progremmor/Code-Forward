@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+<script>
+  document.documentElement.classList.add("no-animations");
 
+  window.addEventListener("load", () => {
+    document.documentElement.classList.remove("no-animations");
+  });
+</script>
 <head>
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/sideBar.css">
     <link rel="stylesheet" href="../CSS/GetInvolved.css">
     <title>Get Involved</title>
 </head>
+
 
 <body>
     <div class="formatGrid" z-index="-2">

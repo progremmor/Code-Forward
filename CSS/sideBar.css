@@ -31,11 +31,14 @@ div#LeButtons li a{
 	text-decoration: none;
 	display: block ;
 }
-#LeButtons li a:hover{
-    animation: buttonHover 0.2s forwards;
+#LeButtons li a{
+    transform: translateY(0);
+    filter: drop-shadow(0px 0px 1px rgba(12, 13, 20, 0.4));
+    transition: transform 0.2s ease, filter 0.2s ease;
 }
-#LeButtons li a:not(:hover){
-    animation: notButtonHover 0.5s forwards;
+#LeButtons li a:hover{
+    transform: translateY(-2px);
+    filter: drop-shadow(0px 8px 8px rgba(16, 17, 25, 0.4));
 }
 @keyframes buttonHover{
     0%{

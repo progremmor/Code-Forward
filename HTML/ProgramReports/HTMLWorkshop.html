@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+<script>
+  document.documentElement.classList.add("no-animations");
 
+  window.addEventListener("load", () => {
+    document.documentElement.classList.remove("no-animations");
+  });
+</script>
 <head>
     <link rel="stylesheet" href="../../CSS/style.css">
     <link rel="stylesheet" href="../../CSS/sideBar.css">
@@ -8,8 +14,8 @@
     <title>Get Involved</title>
 </head>
 
-<body>
-    <div class="formatGrid" z-index="-2">
+  <body>
+    <div class="formatGrid" z-index="-2">  
         <h1 id="About">
             <div class="Headertext">
                 <div id="Logo" style="object-fit:cover;text-align:center;justify-content:center;align-content:center;">
@@ -34,7 +40,7 @@
         <div id="body">
             <div id="vertGrid">
                 <div class="programGrid">
-                    <img style="width:15vw; height:auto" src="../../Images/Fall Workshop.png">
+                    <img style="width:20vw; height:auto" src="../../Images/Fall Workshop.png">
                     <div>
                         <p style="line-height: 116%;text-align: left;margin-bottom: 0.11in;background: transparent; font-size:12px">
                             <strong>The Fall 2025 Coding Workshop</strong> took place in October 2025 and ran for four
