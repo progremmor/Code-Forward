@@ -130,7 +130,7 @@ div#sideCol{
     justify-content:center;
     align-items:center;
     background:rgb(0, 0, 0);
-    min-height:58px;
+    height:clamp(58px, 10vh, 100%);
     width:100vw;
     overflow-x:hidden;
 }
