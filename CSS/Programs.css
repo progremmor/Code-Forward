@@ -28,61 +28,73 @@
     height:50%;
 }
 
-/* What We Do program list */
-.program-list{
-    flex-direction:column;
-    flex-wrap:nowrap;
-    gap:2rem;
+/* What We Do program list, matching the blog post format. */
+#programPosts{
+    list-style:none;
+    width:min(100%, 1000px);
     margin:2rem auto;
-    max-width:1000px;
     padding:0 2rem;
-    align-items:stretch;
+    box-sizing:border-box;
 }
 
-.program-card{
-    display:grid;
-    grid-template-columns:minmax(180px, 280px) 1fr;
-    gap:2rem;
+#programPosts li + li{
+    margin-top:1.5rem;
+}
+
+.program-item{
+    display:flex;
     align-items:center;
-    padding:1.25rem;
-    border:1px solid #d2d2d2;
-    border-radius:8px;
-    box-shadow:2px 3px 5px #ababab;
-}
-
-.program-image-link{
-    display:block;
-}
-
-.program-card img{
-    display:block;
-    width:100%;
-    height:auto;
-}
-
-.program-card h2{
-    margin:0;
-    font-family:Arial, sans-serif;
-    font-size:clamp(1.4rem, 3vw, 2rem);
-}
-
-.program-card h2 a{
+    gap:clamp(1rem, 4vw, 3rem);
+    min-height:220px;
     color:#000;
     text-decoration:none;
 }
 
-.program-card h2 a:hover,
-.program-card h2 a:focus-visible{
+.program-img{
+    display:block;
+    width:clamp(170px, 28vw, 280px);
+    aspect-ratio:4 / 3;
+    object-fit:cover;
+    object-position:top;
+    border-radius:24px;
+    flex:0 0 auto;
+}
+
+.program-details{
+    padding:min(3em, 3%);
+}
+
+.program-details p{
+    margin:0;
+    font-size:clamp(1.4rem, 3vw, 2rem);
+}
+
+.program-details .program-date{
+    margin-top:.45rem;
+    color:rgb(54, 54, 54);
+    font-size:clamp(.9rem, 1.7vw, 1.1rem);
+}
+
+.program-item:hover .program-details strong,
+.program-item:focus-visible .program-details strong{
     text-decoration:underline;
 }
 
 @media (max-width:600px){
-    .program-list{
+    #programPosts{
         padding:0 1rem;
     }
 
-    .program-card{
-        grid-template-columns:1fr;
-        gap:1rem;
+    .program-item{
+        align-items:flex-start;
+        min-height:0;
+    }
+
+    .program-img{
+        width:42vw;
+    }
+
+    .program-details{
+        padding:0;
     }
 }
