@@ -1,17 +1,24 @@
 .programGrid{
-    display:flex; 
-    flex-flow:row wrap;
-    width:100%;
-    margin-top:5%;
+    display:block;
+    width:min(90%, 1100px);
+    margin:2.25rem auto 3rem;
     height:auto;
-    box-sizing:border-box;   
-    justify-content: space-around;
-    align-items:center;
+    box-sizing:border-box;
+    padding:0 1rem;
+    text-align:left;
+}
+
+.programGrid::after{
+    content:"";
+    display:block;
+    clear:both;
 }
 
 .programGrid p{
     font-size:clamp(1rem, 1.8vw, 1.35rem) !important;
     line-height:1.45 !important;
+    margin:0 0 1rem !important;
+    text-align:left !important;
 }
 
 .programGrid strong{
@@ -19,9 +26,33 @@
 }
 
 .programGrid > img{
-    width:clamp(240px, 30vw, 440px) !important;
-    max-width:90%;
+    float:left;
+    width:clamp(220px, 30vw, 360px) !important;
+    max-width:45%;
     height:auto !important;
+    margin:0 2rem 1.25rem 0;
+    object-fit:contain;
+}
+
+.programGrid > img.expo-report-img{
+    width:clamp(240px, 34vw, 420px) !important;
+    height:auto !important;
+}
+
+.programGrid ul{
+    margin:0 0 1rem 1.25rem;
+    padding-left:1.25rem;
+}
+
+.programGrid li p{
+    margin-bottom:.35rem !important;
+}
+
+.programGrid iframe{
+    display:block;
+    width:min(100%, 560px);
+    margin:1.5rem auto 0;
+    clear:both;
 }
 
 .p{
@@ -41,6 +72,26 @@
     width:100%;
     
 }
+
+.program-report-header{
+    width:min(90%, 1100px);
+    margin:3rem auto 0;
+    text-align:center;
+}
+
+.program-report-header h2{
+    margin:0;
+    font-size:clamp(2rem, 4vw, 3.5rem);
+    line-height:1.1;
+    color:#000;
+}
+
+.program-report-date{
+    margin:.6rem 0 0;
+    font-size:clamp(1rem, 1.8vw, 1.25rem);
+    color:rgb(54, 54, 54);
+}
+
 .box{
     display:block;
     background-color:gray;
@@ -58,7 +109,7 @@
 }
 
 .timeline-wrap{
-    width:min(92%, 980px);
+    width:min(100%, 1470px);
     margin:2rem auto 1rem;
     padding:0 2rem;
     box-sizing:border-box;
@@ -122,5 +173,20 @@
 
     .postImg{
         width:42vw;
+    }
+
+    .programGrid{
+        width:100%;
+        padding:0 1rem;
+        margin-top:1.5rem;
+    }
+
+    .programGrid > img,
+    .programGrid > img.expo-report-img{
+        float:none;
+        display:block;
+        width:min(100%, 360px) !important;
+        max-width:100%;
+        margin:0 auto 1.25rem;
     }
 }
