@@ -27,17 +27,26 @@
 
 .programGrid > img{
     float:left;
-    width:clamp(150px, 20vw, 240px) !important;
-    max-width:35%;
+    width:clamp(220px, 30vw, 360px) !important;
+    max-width:45%;
     height:auto !important;
     margin:0 2rem 1.25rem 0;
     object-fit:contain;
 }
 
 .programGrid > img.expo-report-img{
-    width:clamp(150px, 20vw, 240px) !important;
-    max-width:35%;
+    width:clamp(360px, 50vw, 640px) !important;
+    max-width:58%;
     height:auto !important;
+}
+
+.programGrid > img.summer-camp-report-img{
+    width:clamp(320px, 40vw, 520px) !important;
+    max-width:55%;
+}
+
+.programGrid .summer-camp-features{
+    clear:left;
 }
 
 .programGrid ul{
@@ -82,7 +91,7 @@
 
 .program-report-header h2{
     margin:0;
-    font-size:clamp(1rem, 1.8vw, 1.25rem);
+    font-size:clamp(1.35rem, 2.5vw, 2.15rem);
     line-height:1.1;
     color:#000;
 }
@@ -118,7 +127,7 @@
 
 .timeline-img{
     display:block;
-    width:50%;
+    width:100%;
     height:auto;
     margin:0 auto;
 }
@@ -190,10 +199,11 @@
     }
 
     .programGrid > img,
-    .programGrid > img.expo-report-img{
+    .programGrid > img.expo-report-img,
+    .programGrid > img.summer-camp-report-img{
         float:none;
         display:block;
-        width:min(75%, 240px) !important;
+        width:min(100%, 360px) !important;
         max-width:100%;
         margin:0 auto 1.25rem;
     }
