@@ -35,7 +35,8 @@
 }
 
 .programGrid > img.expo-report-img{
-    width:clamp(240px, 34vw, 420px) !important;
+    width:clamp(360px, 50vw, 640px) !important;
+    max-width:58%;
     height:auto !important;
 }
 
