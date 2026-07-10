@@ -118,8 +118,9 @@
 
 .timeline-img{
     display:block;
-    width:100%;
+    width:50%;
     height:auto;
+    margin:0 auto;
 }
 
 #blogPosts li + li,
@@ -147,7 +148,13 @@
 
 .item p{
     margin:0;
-    font-size:clamp(1rem, 2vw, 1.35rem);
+    font-size:clamp(.9rem, 1.7vw, 1.1rem);
+}
+
+.item > div{
+    flex:1 1 auto;
+    width:100%;
+    padding-left:clamp(2rem, 6vw, 5rem) !important;
 }
 
 .item p + p{
